@@ -4,16 +4,16 @@
     --body-text-color:#434455;
     --headings-color:#2E2F42;
     --accent-color:#E7E9FC;
+    --inverted-text-color:#fff;
 }
 
 body{
     color:var(--body-text-color);
     font-family:'Roboto', sans-serif;
-    font-weight: 400;
     font-size:16px;
     line-height:1.5;
     letter-spacing: 0.02em;
-    background-color: #fff;
+    background-color:var(--inverted-text-color);
 }
 
 ul{
@@ -21,12 +21,11 @@ ul{
 }
 
 .navigation-link.current{
-    color:var(--accent-color);
+    color:var(--pressed-state-color);
 }
 .logo{
     color:var(--primary-brand-color);
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -40,7 +39,7 @@ ul{
 }
 
 footer .logo-decorate{
-    color:#fff;
+    color:var(--inverted-text-color);
 }
 
 .navigation-link, .address-link{
@@ -69,12 +68,11 @@ footer .logo-decorate{
 
 .hero{
     background-color: var(--headings-color);
-    color:#fff;
+    color:var(--inverted-text-color);
     text-align: center;
 }
 
 .hero-title{
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07; 
 }
@@ -84,7 +82,7 @@ footer .logo-decorate{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    color: #fff;
+    color: var(--inverted-text-color);
     background-color: var(--primary-brand-color);
     cursor: pointer;
 }
@@ -113,7 +111,7 @@ footer .logo-decorate{
 }
 
 .team-card{
-    background-color: #fff;
+    background-color: var(--inverted-text-color);
     text-align: center;
 }
 
@@ -146,7 +144,11 @@ footer{
 
 .portfolio-filter-btn:hover, .portfolio-filter-btn:focus{
     background-color: var(--pressed-state-color);
-    color:#fff;
+    color:var(--inverted-text-color);
+}
+
+.portfolio-project-link{
+    text-decoration: none;
 }
 
 .portfolio-project-title{
@@ -154,4 +156,12 @@ footer{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+}
+
+.portfolio-project-type{
+    color: var(--body-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
